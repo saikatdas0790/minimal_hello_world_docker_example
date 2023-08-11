@@ -1,5 +1,5 @@
 FROM scratch
 WORKDIR /app
-COPY ./target/release/hello_world .
-CMD [ "/app/hello_world" ]
+COPY ./target/x86_64-unknown-linux-musl/release/hello_world .
+CMD [ "./hello_world" ]
 
